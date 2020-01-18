@@ -73,7 +73,7 @@ class Teams extends Component {
                         description={teams[value].description} />);
 
         return (
-            <section className={'team-section'}>
+            <section className={'teams-section'}>
                 <div className={'container'}>
                     <SectionTitle>Zespoły</SectionTitle>
                     <Slider {...sliderSettings}>

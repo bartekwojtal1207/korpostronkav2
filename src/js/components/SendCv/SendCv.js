@@ -20,7 +20,7 @@ const SendCv = () => {
             <div className={'container'}>
                 <SectionTitle customClass={'White'}>Wyślij CV</SectionTitle>
                 <p>Nie znalazłeś interesującej oferty pracy? <br/> Nic straconego! Wyślij nam dokumenty aplikacyjne, a my skontaktujemy się z Tobą, kiedy tylko pojawi się coś ciekawego i pasującego do Twoich kwalifikacji.</p>
-                <ButtonLink otherStyle={ButtonOtherStyle} customClass='blue-button'>Aplikuj</ButtonLink>
+                <ButtonLink otherStyle={ButtonOtherStyle} customClass='BlueButton'>Aplikuj</ButtonLink>
             </div>
         </section>
     )
