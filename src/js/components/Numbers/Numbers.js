@@ -1,5 +1,5 @@
 import React from "react";
-import './Numbers.css';
+// import './Numbers.css';
 // import Logo from './numbers.jpg'
 // import StylesApp from '../../hoc/Layout/Layout.module.scss'
 import SectionTitle from "../UI/Titles/SectionTitle";

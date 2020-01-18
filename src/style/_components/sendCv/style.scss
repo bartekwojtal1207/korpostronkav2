@@ -1,10 +1,11 @@
-.Send-cv {
+.send-cv {
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
   background-repeat: no-repeat;
   display: block;
   padding: 56px 0 30px 0;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../src/img/section/laptop.jpg');
 
   >div {
     display: flex;

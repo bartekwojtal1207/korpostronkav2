@@ -3,7 +3,7 @@ import SectionTitle from "../UI/Titles/SectionTitle";
 // import StylesApp from '../../hoc/Layout/Layout.module.scss'
 // import Styles from './WhatWeDo.module.scss';
 import ButtonLink from "../UI/Buttons/ButtonLink";
-// import img from './whatWeDo.jpg';
+import img from './whatWeDo.jpg';
 
 const WhatWeDo = () => {
     const [showMobileText, setShowMobileText] = useState(false);
@@ -17,9 +17,8 @@ const WhatWeDo = () => {
                     serwisem e-commerce finansowego w Polsce.
                     { (showMobileText) ? <span>Jesteśmy częścią WP Holding, co umożliwia nam wymianę informacji, wiedzy i know-how z liderem rynku wśród grup medialnych, ale wciąż podkreślamy swoją niezależność i fakt, że nie jesteśmy korporacją.</span> : null }
                 </p>
-
                 <ButtonLink click={() => setShowMobileText(!showMobileText)} otherStyle={{marginBottom: '15px'}} customClass={'BlueButton'}>Czytaj więcej</ButtonLink>
-                {/*<img src={img} alt="zdjęcie"/>*/}
+                <img src={img} alt="zdjęcie"/>
             </div>
         </section>
     )
