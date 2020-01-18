@@ -1,5 +1,5 @@
 import React from "react";
-// import Styles from './Numbers.module.scss';
+import './Numbers.css';
 // import Logo from './numbers.jpg'
 // import StylesApp from '../../hoc/Layout/Layout.module.scss'
 import SectionTitle from "../UI/Titles/SectionTitle";
@@ -8,7 +8,7 @@ import NumberItems from "./NumberItems/NumberItems";
 const Numbers = () => {
     //style={{'backgroundImage': 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("")'}}
     return (
-        <section className={'numbers'}>
+        <section className='numbers'>
             <div className={'container'}>
                 <SectionTitle  otherStyle={{marginBottom: '50px'}} customClass={'White'}>
                     Najkrócej o <br/> Totalmoney.pl
