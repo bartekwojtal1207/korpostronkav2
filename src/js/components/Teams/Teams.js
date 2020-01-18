@@ -2,7 +2,7 @@ import React, {Component} from "react";
 // import StylesApp from '../../hoc/Layout/Layout.module.scss';
 // import Styles from './Teams.module.scss';
 import SectionTitle from "../UI/Titles/SectionTitle";
-// import Slider from "react-slick";
+import Slider from "react-slick";
 // import '../../../style/_components/slider/slider.css';
 
 import data from './teams.json';
@@ -74,12 +74,12 @@ class Teams extends Component {
 
         return (
             <section className={'team-section'}>
-                {/*<div className={'container'}>*/}
-                {/*    <SectionTitle>Zespoły</SectionTitle>*/}
-                {/*    <Slider {...sliderSettings}>*/}
-                {/*        {sliderItem}*/}
-                {/*    </Slider>*/}
-                {/*</div>*/}
+                <div className={'container'}>
+                    <SectionTitle>Zespoły</SectionTitle>
+                    <Slider {...sliderSettings}>
+                        {sliderItem}
+                    </Slider>
+                </div>
             </section>
         )
     }
