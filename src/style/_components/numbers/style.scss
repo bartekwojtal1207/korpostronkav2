@@ -1,0 +1,57 @@
+.numbers {
+  display: block;
+  padding: 44px 0 40px 0;
+  //background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../../../assets/img/img_min/gc-dron2.kraken.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  &-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFF;
+
+    .item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 44px;
+      width: 225px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      span {
+        text-align: center;
+        margin: 0;
+        font-size: 40px;
+        margin-bottom: 20px;
+        width: 170px;
+        font-weight: 500;
+        line-height: 1;
+      }
+
+      p {
+        margin: 0;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        font-weight: 400;
+        width: 78%;
+      }
+    }
+  }
+}

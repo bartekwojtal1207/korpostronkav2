@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-import styles from './Layout.module.scss';
 import Navbar from '../../components/Navbar/Navbar';
-import Logo from './header1.jpg';
+// import Logo from './header1.jpg';
 import Header from "../../components/Header/Header";
 
 class Layout extends Component {
-
+    //'backgroundImage': 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("' + "" + '")'
     render() {
         return (
          <div>
-             <div className={styles.HeaderImg}
-                  style={{'backgroundImage': 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("' + Logo + '")'}}>
-                 <Navbar stylesApp={styles}/>
-                 <Header stylesApp={styles}/>
+             <div className={"header-img"}>
+                 <Navbar/>
+                 <Header/>
              </div>
              <div>
                  {this.props.children}

@@ -1,11 +1,11 @@
 import React from "react";
-import Styles from './MenuList.module.scss';
+// import Styles from './MenuList.module.scss';
 
 const MenuList = (props) => {
 
     return (
-        <div className={Styles.MenuListWrapper }>
-            <ul className={ [Styles.MenuList, props.isOpen ? Styles.Open : null].join(' ') }>
+        <div className={'menu-list-wrapper'}>
+            <ul className={['menu-list', props.isOpen ? 'open' : null].join(' ') }>
                 <li>
                     <a href="">o firmie</a>
                 </li>

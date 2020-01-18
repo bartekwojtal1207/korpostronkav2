@@ -1,8 +1,8 @@
 import React, {Component} from "react";
-import Style from './NumbersItems.module.scss';
-import card from './card.svg';
-import conference from './conference.svg';
-import library from './library.svg';
+// import Style from './NumbersItems.module.scss';
+// import card from './card.svg';
+// import conference from './conference.svg';
+// import library from './library.svg';
 
 class NumberItems extends Component {
 
@@ -14,17 +14,17 @@ class NumberItems extends Component {
                     currentValue: 0,
                     value: '147',
                     title: 'instutycji finansowych',
-                    logo: library
+                    logo: "library"
                 }, {
                     currentValue: 0,
                     value: '6.5',
                     title: 'mln realnych użytkowników portalu',
-                    logo: conference
+                    logo: 'conference'
                 }, {
                     currentValue: 0,
                     value: '968',
                     title: 'produktów finansowych',
-                    logo: card
+                    logo: "card"
                 }
             ]
         }
@@ -48,7 +48,7 @@ class NumberItems extends Component {
     render () {
         const items = this.state.boxes.map((el, key) => {
             return (
-                <div key={key} className={Style.item}>
+                <div key={key} className={'item'}>
                     <img src={el.logo} alt=""/>
                     <div>
                         <span>{ el.currentValue.toString().replace(".", ",")  % 1 === 0 ?
@@ -62,7 +62,7 @@ class NumberItems extends Component {
         });
 
         return (
-            <div className={Style.NumbersItems}>{items}</div>
+            <div className={'number-list'}>{items}</div>
         )
     }
 };

@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import StyleApp from '../../hoc/Layout/Layout.module.scss';
-import Styles from './JobsOffers.module.scss'
+// import StyleApp from '../../hoc/Layout/Layout.module.scss';
+// import Styles from './JobsOffers.module.scss'
 import JobsOffersItem from './JobsOffersItem';
 import SectionTitle from "../UI/Titles/SectionTitle";
 
@@ -31,10 +31,10 @@ class JobsOffers extends Component {
         const jobsOffersItems = jobsOffers.map((el, index) => <JobsOffersItem key={index} title={el.title} description={el.description} link={el.link} city={el.city} />);
 
         return (
-            <section className={Styles.JobsOffersSection}>
-                <div className={StyleApp.Container}>
+            <section className={'jobs-offers-section'}>
+                <div className={'container'}>
                     <SectionTitle>Znajdź ofertę dla siebie</SectionTitle>
-                    <ul className={Styles.JobsOffersList}>
+                    <ul className={'jobs-offers-list'}>
                         {jobsOffersItems}
                     </ul>
                 </div>
