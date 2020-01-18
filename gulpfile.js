@@ -34,13 +34,9 @@ const styles = (cb) => {
 
 gulp.task('stream', () => {
         return watch('src/style/**/*.scss', gulp.series(['css']))
-})
-
-
+});
 
 const js = gulp.series(runwebpack);
 const css = gulp.series(styles);
-// const test = gulp.series(watch);
 exports.js = js;
 exports.css = css;
-// exports.test = test;

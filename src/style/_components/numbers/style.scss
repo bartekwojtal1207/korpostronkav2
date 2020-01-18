@@ -55,3 +55,49 @@
     }
   }
 }
+
+@media screen and (min-width: 768px){
+
+  .numbers {
+
+    &-list {
+      flex-direction: row;
+
+      .item {
+        margin-bottom: 0;
+        position: relative;
+        border: 1px solid #FFF;
+        border-top: 0;
+        width: 206px;
+        height: 160px;
+        margin-right: 20px;
+
+        &:last-of-type {
+          margin-right: 0 ;
+        }
+
+        &:after, &:before {
+          content: "";
+          width: 60px;
+          height: 1px;
+          background-color: #FFF;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        &:after {
+          left: calc(100% - 60px);
+        }
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: -30px;
+        left: calc(50% - 25px);
+      }
+    }
+  }
+}

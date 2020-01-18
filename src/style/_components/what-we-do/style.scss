@@ -26,3 +26,35 @@
     object-fit: cover;
   }
 }
+
+@media screen and ('min-width: 768px') {
+
+  .what-we-do {
+
+    .section-title {
+      margin-right: auto;
+      margin-bottom: 50px;
+      font-size: 50px;
+
+      &:after {
+        content: '';
+        display: block;
+        position: relative;
+        top: 20px;
+        width: 100px;
+        background-color: white;
+        border: 2.5px solid #4d9ee9;
+      }
+    }
+
+    p {
+      width: 84%;
+      margin-left: auto;
+      text-align: right;
+    }
+
+    .button-link {
+      display: none;
+    }
+  }
+}
