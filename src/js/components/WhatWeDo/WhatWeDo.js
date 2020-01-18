@@ -18,11 +18,10 @@ class WhatWeDo extends Component {
         this.checkWidth = () => {
             const md = window.matchMedia('(min-width: 768px)');
             if(md.matches) {
-                console.log('asdad');
                 this.setState({showMobileText: true})
             }
         };
-        this.checkWidth()
+        this.checkWidth();
     }
 
     render() {
