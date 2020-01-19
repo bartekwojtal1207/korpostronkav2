@@ -33,8 +33,8 @@
 
     .section-title {
       margin-right: auto;
-      margin-bottom: 50px;
-      //font-size: 50px;
+      margin-bottom: 60px;
+      text-align: left;
 
       &:after {
         content: '';
@@ -47,6 +47,22 @@
       }
     }
 
+    .gallery {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+
+      >div {
+        width: 100%;
+        justify-content: space-evenly;
+        display: flex;
+      }
+
+      img {
+        width: unset;
+      }
+    }
+
     p {
       width: 84%;
       margin-left: auto;
@@ -56,6 +72,87 @@
 
     .button-link {
       display: none;
+    }
+  }
+}
+
+@media screen and('min-width: 1200px') {
+  .what-we-do {
+    padding-top: 46px;
+    padding-bottom: 72px;
+    position: relative;
+
+    &:before {
+      content: "Co robimy";
+      position: absolute;
+      font-size: 170px;
+      transform: rotate(-90deg);
+      display: block;
+      top: 44%;
+      z-index: -1;
+      font-weight: 700;
+      color: #f3f3f3;
+      left: -17%;
+    }
+
+    &-content {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      >div {
+        display: flex;
+      }
+    }
+
+    .section-title {
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    p {
+      width: 55%;
+      margin-bottom: 0;
+      margin-top: 16px;
+    }
+
+    .gallery {
+      margin-top: 70px;
+
+      >div {
+        order: 2;
+        width: 65%;
+        padding-left: 24px;
+        display: block;
+
+        img {
+          &:first-of-type {
+            margin-bottom: 16px;
+            width: 700px;
+            height: 287px;
+          }
+
+          &:nth-of-type(2), &:nth-of-type(3) {
+            max-width: 340px;
+            height: unset;
+          }
+
+          &:nth-of-type(2) {
+            margin-right: 18px;
+          }
+        }
+      }
+
+      img {
+
+        &:last-of-type {
+          order: 1;
+        }
+      }
+
+      .img3 {
+        width: 442px;
+        height: 530px;
+      }
     }
   }
 }

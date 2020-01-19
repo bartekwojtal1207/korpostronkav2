@@ -101,3 +101,32 @@
     }
   }
 }
+
+@media screen and ('min-width: 1200px') {
+  .numbers {
+    padding-bottom: 80px;
+
+    &-list {
+
+      .item {
+        margin-right: 116px;
+
+        span {
+          font-size: 60px;
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+
+        &:nth-of-type(2) {
+          p {
+            width: 100%;
+          }
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

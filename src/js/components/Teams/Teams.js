@@ -76,13 +76,16 @@ class Teams extends Component {
             <section className={'teams-section'}>
                 <div className={'container'}>
                     <SectionTitle>Zespoły</SectionTitle>
-                    <Slider {...sliderSettings}>
+                    {/*<Slider {...sliderSettings}>*/}
+                    {/*    {sliderItem}*/}
+                    {/*</Slider>*/}
+                    <div className={'teams-section-list'}>
                         {sliderItem}
-                    </Slider>
+                    </div>
                 </div>
             </section>
         )
     }
-};
+}
 
 export default Teams;
