@@ -51,3 +51,54 @@
   padding: 16px 0 8px 0;
   max-height: 400px;
 }
+
+@media screen and ('min-width: 768px') {
+
+  .menu-list {
+    overflow: visible;
+    flex-direction: row;
+    display: flex;
+    transition: none;
+    max-height: unset;
+
+
+    li {
+      margin-right: 38px;
+
+      &:hover {
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        opacity: 0;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+
+        &:after {
+          display: block;
+        }
+      }
+    }
+
+    a {
+      color: #FFF;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 600;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &-wrapper {
+      position: static;
+      background-color: transparent;
+    }
+  }
+}
