@@ -8,7 +8,7 @@ const JobsOffersItem = (props) => {
                 <p className={'jobs-offers-item-title'}>{props.title}</p>
                 <span className={'jobs-offers-item-description'}>{props.description}</span>
             </a>
-            <span className={'jobs-offers-item-city'}>{props.city}</span>
+            <div className={'jobs-offers-item-city'}>{props.city}</div>
             <a target={'_blank'} className={'jobs-offers-item-link'} href={props.link}>zobacz szczegóły</a>
         </li>
     )
