@@ -1,0 +1,27 @@
+.best-employers {
+  background-color: #f6f6f6;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .description {
+    font-size: 18px;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 40px;
+    line-height: 1.667;
+    font-weight: bold;
+  }
+
+  .section-title {
+    font-size: 36px;
+    color: #638bf5;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
