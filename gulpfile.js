@@ -23,17 +23,12 @@ const runwebpack = (cb) => {
 };
 
 const styles = (cb) => {
-    return gulp
-        .src("./src/style/containers/*.scss")
-        .pipe(sass({ outputStyle: "expanded" }))
+    return gulp.src("./src/style/containers/**/*.scss")
+        .pipe(sass({ outputStyle: "compressed" }))
         .pipe(extractMediaQuery())
         .pipe(autoprefixer())
         .pipe(cssmin())
-        .pipe(gulp.dest("./dist/css"))
-        // .pipe(gulp.dest(':foo/:name.css', {foo: name}))
-        // .pipe(gulp.dest(function (file) {
-        //     console.log(file)
-        // }))
+        .pipe(gulp.dest("./dist/css/"))
 
 };
 

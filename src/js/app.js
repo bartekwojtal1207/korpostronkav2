@@ -7,8 +7,8 @@ import Career from "./containers/career/Career"
 const App = () => {
     return (
         <Layout>
-            {/*<Homepage/>*/}
-            <Career/>
+            <Homepage/>
+            {/*<Career/>*/}
         </Layout>
     );
 };
