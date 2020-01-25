@@ -30,10 +30,15 @@ const styles = (cb) => {
         .pipe(autoprefixer())
         .pipe(cssmin())
         .pipe(gulp.dest("./dist/css"))
+        // .pipe(gulp.dest(':foo/:name.css', {foo: name}))
+        // .pipe(gulp.dest(function (file) {
+        //     console.log(file)
+        // }))
+
 };
 
 gulp.task('stream', () => {
-        return watch('src/style/**/*.scss', gulp.series(['css']))
+    return watch('src/style/**/*.scss', gulp.series(['css']))
 });
 
 const js = gulp.series(runwebpack);
