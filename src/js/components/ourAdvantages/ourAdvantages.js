@@ -63,7 +63,7 @@ class OurAdvantages extends Component {
                         title={ourAdvantages[value].title}
                         description={ourAdvantages[value].description} />);
         return (
-            <section>
+            <section className={'our-advantages'}>
                 <div className={'container'}>
                     <Slider {...sliderSettings}>
                         {sliderItem}
