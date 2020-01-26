@@ -1,7 +1,5 @@
-import React, {useState, Component} from "react";
+import React, {Component} from "react";
 import SectionTitle from "../UI/Titles/SectionTitle";
-// import StylesApp from '../../hoc/Layout/Layout.module.scss'
-// import Styles from './WhatWeDo.module.scss';
 import ButtonLink from "../UI/Buttons/ButtonLink";
 import img from './whatWeDo.jpg';
 import img1 from './totalmoney-3-min2.kraken.jpg';

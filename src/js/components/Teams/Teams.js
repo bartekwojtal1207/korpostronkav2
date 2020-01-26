@@ -1,7 +1,5 @@
 import React, {Component} from "react";
 import SectionTitle from "../UI/Titles/SectionTitle";
-import Slider from "react-slick";
-// import '../../../style/_components/slider/slider.scss';
 import data from './teams.json';
 import TeamsItems from "./TeamsItems";
 

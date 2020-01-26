@@ -1,0 +1,20 @@
+{
+  "steps" : [
+    {
+      "title": "Selekcja aplikacji",
+      "description": "Jeśli oprócz CV w ogłoszeniu prosimy np. o portfolio, to je dołącz. Nie przesyłaj dokumentów w języku angielskim, jeśli nie jest to zaznaczone."
+    },
+    {
+      "title": "Rozmowa kwalifikacyjna",
+      "description": "Mamy szansę poznać się bliżej - my opowiemy Ci o naszej firmie i o stanowisku, Ty o swoich umiejętnościach, pasjach i doświadczeniu."
+    },
+    {
+      "title": "Zadanie dodatkowe",
+      "description": "W przypadku rekrutacji na niektóre stanowiska poprosimy Cię o przygotowanie zadania lub zaprosimy na jeszcze jedno spotkanie."
+    },
+    {
+      "title": "Witamy na pokładzie!",
+      "description": "To decyzja, która z osób biorących udział w rekrutacji powinna ostatecznie dołączyć do zespołu. Mamy nadzieję, że będziesz to Ty! :)"
+    }
+  ]
+}
