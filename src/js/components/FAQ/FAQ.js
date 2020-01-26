@@ -6,7 +6,6 @@ const FAQ = () => {
     const faq = data.faq;
     //   name={teams[value].title}
     const faqListItem = Object.keys(faq).map((value, index) => {
-
     });
 
     return (
