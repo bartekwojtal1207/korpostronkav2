@@ -1,5 +1,4 @@
 import React from 'react';
-// import Style from './Teams.module.scss';
 
 const TeamsItems = (props) => {
     return (
