@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BestEmployers from "../../components/BestEmployers/BestEmoloyers";
 import OurAdvantages from "../../components/ourAdvantages/ourAdvantages";
+import Recruitment from "../../components/Recruitment/Recruitment";
 
 
 class Career extends Component {
@@ -10,6 +11,7 @@ class Career extends Component {
             <div>
                 <BestEmployers/>
                 <OurAdvantages/>
+                <Recruitment/>
             </div>
         )
     }
