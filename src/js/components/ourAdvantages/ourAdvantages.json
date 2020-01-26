@@ -1,0 +1,40 @@
+{
+  "ourAdvantages": [
+    {
+      "title": "Pozytywni ludzie",
+      "description": "Pracujemy w przyjaznym i twórczym środowisku, cenimy sobie luz, swobodę, współpracę i dbamy opozytywne relacje."
+    },
+    {
+      "title": "Godziny pracy",
+      "description": "Sam decydujesz o której przychodzisz do biura! Jeśli jesteś „skowronkiem” możesz zacząć pracę już o godz. 7:00. Chcesz się wyspać? Możesz pojawić się w biurze do godz. 10:00."
+    },
+    {
+      "title": "Kursy i szkolenia",
+      "description": " Inwestujemy w ludzi. Dbamy o to, aby nasi pracownicy podnosili swoje kwalifikacje i rozwijali umiejętności. Chcesz wziąć udział w ciekawej konferencji? Potrzebujesz szkolenia? Nie ma problemu! :)"
+    },
+    {
+      "title": "Nowoczesne biuro",
+      "description": "Nasza siedziba znajduje się w centrum miasta, przy Rondzie Reagana. Kiedy masz ochotę na chwilę odpoczynku, możesz skorzystać z naszego chill room’u. Do twojej dyspozycji mamy piłkarzyki, playstation i gry planszowe."
+    },
+    {
+      "title": "Brak dress codu",
+      "description": "Do pracy przychodzimy bez krawatów, a latem w krótkich spodenkach. W garnitur wbijamy się tylko, jeśli chcemy"
+    },
+    {
+      "title": "Swobodna atmosfera",
+      "description": "Bardzo dbamy o naszą nieformalną kulturę organizacyjną i swobodę w kontaktach z szefami czy współpracownikami."
+    },
+    {
+      "title": "Spotkania i imprezy integracyjne",
+      "description": "Nie tylko pracą człowiek żyje! Raz w miesiącu wszyscy spotykamy się na wspólnym piwie/integracji na mieście, a raz do roku bawimy się na wspólnej imprezie wyjazdowej."
+    },
+    {
+      "title": "Benefity dla pracownika",
+      "description": "Ubezpieczenie na życie, pakiet medyczny i sportowy, zajęcia z języka angielskiego, świeże owoce, wspólne śniadania czy pyszna kawa – zadbamy o niemal każdą Twoją potrzebę :)"
+    },
+    {
+      "title": "Lider w branży",
+      "description": "Jesteśmy częścią Wirtualna Polska Holding, dzięki czemu możemy wymieniać doświadczenia z największymi serwisami e-commerce w Polsce."
+    }
+  ]
+}

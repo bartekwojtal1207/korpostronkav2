@@ -1,6 +1,3 @@
-@media screen and ('min-width: 576px') {
-  body {
-    background-color: red!important;
-    flex-direction: column;
-  }
-}
+@import "../layout/style";
+@import "../../nav/style";
+@import "../../_components/bestEmployers/style";

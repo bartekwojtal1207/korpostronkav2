@@ -16,7 +16,7 @@
     font-size: 34px;
     text-align: center;
     font-weight: 700;
-    line-height: 0.574;
+    line-height: 1.3;
     position: relative;
 
     &:after {
@@ -41,6 +41,33 @@
     font-weight: 300;
     margin-bottom: 30px;
   }
+}
+
+.header {
+
+  &-img {
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../../src/img/headers/header1.jpg');
+  }
+
+  &-img.career {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../../src/img/headers/kariera1.jpg');
+
+    h1 {
+      margin-bottom: 0;
+      font-size: 31px;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.header.career {
+  padding: 36px 0 66px 0;
 }
 
 @media screen and('min-width: 540px') {

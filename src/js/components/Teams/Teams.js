@@ -1,12 +1,8 @@
 import React, {Component} from "react";
-// import StylesApp from '../../hoc/Layout/Layout.module.scss';
-// import Styles from './Teams.module.scss';
 import SectionTitle from "../UI/Titles/SectionTitle";
 import Slider from "react-slick";
-// import '../../../style/_components/slider/slider.css';
-
+import '../../../style/_components/slider/slider.css';
 import data from './teams.json';
-
 import TeamsItems from "./TeamsItems";
 
 import {Afiliacja,

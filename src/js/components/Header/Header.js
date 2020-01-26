@@ -16,7 +16,7 @@ const Header = (props) => {
 
         {/* career */}
         <div className={'container'}>
-            <h1>Dlaczego warto do nas dołączyć ?</h1>
+            <h1>Dlaczego warto <br/>do nas dołączyć ?</h1>
         </div>
 
         </header>

@@ -6,9 +6,9 @@ import Career from "./containers/career/Career"
 
 const App = () => {
     return (
-        <Layout>
-            <Homepage/>
-            {/*<Career/>*/}
+        <Layout headerClass={'career'}>
+            {/*<Homepage/>*/}
+            <Career headerClass={'career'}/>
         </Layout>
     );
 };
