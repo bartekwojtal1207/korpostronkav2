@@ -4,9 +4,12 @@ import data from './questions';
 
 const QAndA = () => {
     const qAndA = data.qAndA;
-    //   name={teams[value].title}
     const faqListItem = Object.keys(qAndA).map((value, index) => {
-
+            return (<li key={index}>
+                <span className={'icon'}>+</span>
+                <p className={'question'}>{qAndA[value].question}</p>
+                <p className={'answer'}>{qAndA[value].answer}</p>
+            </li>)
     });
 
     return (
@@ -18,24 +21,7 @@ const QAndA = () => {
             </header>
             <div className={'container'}>
                 <ul>
-                    <li>
-                        <span className={'icon'}>+</span>
-                        <p className={'question'}>
-                            dsadasdadadasdasdadsadasdadasd
-                        </p>
-                    </li>
-                    <li>
-                        <span className={'icon'}>+</span>
-                        <p className={'question'}>
-                            dsadasdadadasdasdadsadasdadasd
-                        </p>
-                    </li>
-                    <li>
-                        <span className={'icon'}>+</span>
-                        <p className={'question'}>
-                            dsadasdadadasdasdadsadasdadasd
-                        </p>
-                    </li>
+                    {faqListItem}
                 </ul>
             </div>
         </section>

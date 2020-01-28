@@ -55,4 +55,24 @@
     font-size: 14px;
     font-weight: 500;
   }
+
+  .answer {
+    font-size: 12px;
+    font-weight: 300;
+    color: inherit;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
+  }
+
+  li.open {
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .answer {
+      max-height: 500px;
+    }
+  }
 }
