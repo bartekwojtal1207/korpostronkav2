@@ -2,27 +2,33 @@
   "qAndA": [
     {
       "question": "Gdzie mogę znaleźć informacje o aktualnie prowadzonych rekrutacjach?",
-      "answer": "Wszystkie nasze ogłoszenia znajdziesz w tym serwisie, w zakładce “kariera”. Nie widzisz żadnej aktualnej informacji? To oznacza, że w tym momencie nie prowadzimy żadnej rekrutacji. Możesz wtedy wysłać CV do naszego HR, a my, kiedy tylko pojawi się wakat na stanowisko, do którego pasujesz, skontaktujemy się z Tobą."
+      "answer": "Wszystkie nasze ogłoszenia znajdziesz w tym serwisie, w zakładce “kariera”. Nie widzisz żadnej aktualnej informacji? To oznacza, że w tym momencie nie prowadzimy żadnej rekrutacji. Możesz wtedy wysłać CV do naszego HR, a my, kiedy tylko pojawi się wakat na stanowisko, do którego pasujesz, skontaktujemy się z Tobą.",
+      "show": false
     },
     {
       "question": "W jakim miejscu będę pracować?",
-      "answer": "W kompleksie biurowym Grunwaldzki Center przy pl. Grunwaldzkim 23. Mamy do dyspozycji całe 9 piętro nowoczesnego, wygodnego budynku. Kilkadziesiąt metrów od naszego biurowca znajduje się przystanek pl. Grunwaldzki, z którego autobusem czy tramwajem dojedziesz w każdy zakątek miasta. "
+      "answer": "W kompleksie biurowym Grunwaldzki Center przy pl. Grunwaldzkim 23. Mamy do dyspozycji całe 9 piętro nowoczesnego, wygodnego budynku. Kilkadziesiąt metrów od naszego biurowca znajduje się przystanek pl. Grunwaldzki, z którego autobusem czy tramwajem dojedziesz w każdy zakątek miasta. ",
+      "show": false
     },
     {
       "question": "Jakie jest Wasze podejście do nadgodzin?",
-      "answer": "Zazwyczaj nie pracujemy i nie wymagamy od innych, żeby zostawali po godzinach. W wyjątkowych sytuacjach, wcześniej planujemy je wraz z przełożonym."
+      "answer": "Zazwyczaj nie pracujemy i nie wymagamy od innych, żeby zostawali po godzinach. W wyjątkowych sytuacjach, wcześniej planujemy je wraz z przełożonym.",
+      "show": false
     },
     {
       "question": "Ile trwa okres próbny, czy jest różny dla różnych stanowisk?",
-      "answer": "Okres próbny trwa u nas 3 miesiące i jest jednakowy dla wszystkich stanowisk."
+      "answer": "Okres próbny trwa u nas 3 miesiące i jest jednakowy dla wszystkich stanowisk.",
+      "show": false
     },
     {
       "question": "Na którym etapie rekrutacji otrzymam informacje o wynagrodzeniu?",
-      "answer": "Informacje o proponowanym wynagrodzeniu otrzymasz na ostatnim etapie rekrutacji, bezpośrednio przy złożeniu Ci oferty pracy."
+      "answer": "Informacje o proponowanym wynagrodzeniu otrzymasz na ostatnim etapie rekrutacji, bezpośrednio przy złożeniu Ci oferty pracy.",
+      "show": false
     },
     {
       "question": "Czy macie system rekrutacji wewnętrznych?",
-      "answer": "Masz szansę na rozwój w ramach grupy Wirtualna Polska Holding – raz w tygodniu przesyłana jest informacja o aktualnych ofertach w spółkach."
+      "answer": "Masz szansę na rozwój w ramach grupy Wirtualna Polska Holding – raz w tygodniu przesyłana jest informacja o aktualnych ofertach w spółkach.",
+      "show": false
     }
   ]
 }
