@@ -3,7 +3,7 @@ import BestEmployers from "../../components/BestEmployers/BestEmoloyers";
 import OurAdvantages from "../../components/ourAdvantages/ourAdvantages";
 import Recruitment from "../../components/Recruitment/Recruitment";
 import JobsOffers from "../../components/JobsOffers/JobsOffers";
-import FAQ from "../../components/FAQ/FAQ";
+import QAndA from "../../components/QandA/QandA";
 
 
 class Career extends Component {
@@ -15,7 +15,7 @@ class Career extends Component {
                 <OurAdvantages/>
                 <Recruitment/>
                 <JobsOffers/>
-                <FAQ/>
+                <QAndA/>
             </div>
         )
     }
