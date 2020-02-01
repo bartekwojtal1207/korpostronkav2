@@ -100,7 +100,7 @@
         height: 110%;
         z-index: 2;
         top: -10px;
-        font-size: 12px;
+        font-size: 13px;
         color: #666;
         justify-content: center;
         flex-direction: column;
@@ -110,5 +110,36 @@
       }
     }
   }
+}
 
+@media screen and('min-width: 1200px') {
+  .our-advantages {
+    >div {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-list {
+      width: 84%;
+    }
+
+    &-item {
+      width: 30%;
+      margin: 0;
+
+      &:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(6) {
+       padding: 52px 0;
+      }
+
+      &:nth-of-type(3n+2) {
+        width: 38%;
+      }
+
+      &-title {
+        width: 80%;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
 }

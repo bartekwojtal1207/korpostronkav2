@@ -124,5 +124,32 @@
       }
     }
   }
+}
 
+@media screen and('min-width: 1200px') {
+
+  .questions {
+    padding-bottom: 60px;
+
+    header {
+      padding: 120px 0;
+    }
+
+    >div {
+      display: flex;
+      justify-content: center;
+    }
+
+    ul {
+      width: 80%;
+
+      .answer {
+        line-height: 24px;
+      }
+    }
+
+    .section-title {
+      font-size: 60px;
+    }
+  }
 }
