@@ -1,5 +1,4 @@
 .our-advantages {
-  background-color: #f7f7f7;
   padding-top: 70px;
   padding-bottom: 29px;
   font-family: 'Poppins', sans-serif;
@@ -42,6 +41,8 @@
 @media screen and('min-width: 768px') {
 
   .our-advantages {
+    padding-bottom: 40px;
+    position: relative;
 
     &-list {
       display: flex;
@@ -50,10 +51,16 @@
 
     &-item {
       width: 33%;
-      padding: 20px 0;
+      padding: 30px 0;
       border: 1px solid #d7d7d7;
       border-top: 0;
       border-left: 0;
+      position: relative;
+
+      svg {
+        width: 50px;
+        height: 50px;
+      }
 
       &:nth-of-type(3n + 3) {
         border-right: 0
@@ -65,10 +72,41 @@
 
       &:hover {
         cursor: pointer;
+        
+        .our-advantages-item-description {
+          display: flex;
+        }
+      }
+
+      &-header {
+        display: block;
+        text-align: center;
+        color: #666;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 12px;
+      }
+
+      &-title {
+        margin-bottom: 0;
       }
 
       &-description {
         display: none;
+        position: absolute;
+        background-color: #FFFFFF;
+        width: 110%;
+        height: 110%;
+        z-index: 2;
+        top: -10px;
+        font-size: 12px;
+        color: #666;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 0 0 10px 0 #d6d6d6;
+        border-radius: 5px;
+        padding: 8px 16px;
       }
     }
   }
