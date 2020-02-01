@@ -6,7 +6,10 @@ const Recruitment = () => {
     const steps = data.steps;
     const stepsItem = Object.keys(steps).map((value, index) => {
         return ( <div className={'recruitment-item'}>
-            <p className={'recruitment-item-title'}>{steps[value].title}</p>
+            <div>
+                <span className={'icon'}></span>
+                <p className={'recruitment-item-title'}>{steps[value].title}</p>
+            </div>
             <p className={'recruitment-item-description'}>{steps[value].description}</p>
         </div> )
     });

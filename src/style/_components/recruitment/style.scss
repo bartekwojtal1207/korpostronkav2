@@ -13,10 +13,14 @@
   }
 
   &-item {
-    margin-bottom: 16px;
+    margin-bottom: 28px;
+
+    >div {
+      display: flex;
+    }
 
     &:nth-of-type(2) {
-      .recruitment-item-title {
+      .icon {
         &:after {
           content: "2.";
         }
@@ -24,7 +28,7 @@
     }
 
     &:nth-of-type(3) {
-      .recruitment-item-title {
+      .icon {
         &:after {
           content: "3.";
         }
@@ -34,7 +38,7 @@
     &:last-of-type {
       margin-bottom: 0;
 
-      .recruitment-item-title {
+      .icon {
         &:after {
           content: "4.";
         }
@@ -46,25 +50,24 @@
       font-weight: 600;
       line-height: 20px;
       color: #666;
-      margin-bottom: 14px;
-      width: 40%;
+      max-width: 30%;
       position: relative;
-      padding-left: 72px;
+      display: flex;
+    }
 
-      &:before {
-        position: absolute;
-        content: "";
-        top: -11px;
-        left: 0;
-        background-image: -webkit-linear-gradient(0deg, #3d87cc 0%, #4e9ee9 52.002%, #54a4ee 100%);
-        width: 53px;
-        height: 50px;
-        margin-right: 15px;
-        margin-bottom: 8px;
-        margin-top: 5px;
-        transform: rotate(6deg);
-        border-radius: 10px;
-      }
+    .icon {
+      position: relative;
+      display: block;
+      content: "";
+      top: -11px;
+      left: 0;
+      background-image: -webkit-linear-gradient(0deg, #3d87cc 0%, #4e9ee9 52.002%, #54a4ee 100%);
+      width: 53px;
+      height: 50px;
+      margin-right: 15px;
+      margin-top: 5px;
+      transform: rotate(6deg);
+      border-radius: 10px;
 
       &:after {
         content: "1.";
