@@ -83,3 +83,34 @@
     }
   }
 }
+
+@media screen and('min-width: 768px') {
+  .questions {
+
+    li {
+      padding-bottom: 12px;
+
+      .question {
+        padding-left: 46px;
+        margin-bottom: 0;
+
+        &:before {
+          content: "01.";
+          color: #4d9de8;
+          font-size: 18px;
+          font-weight: 600;
+          position: absolute;
+          left: 4px;
+          top: -4px;
+        }
+      }
+
+      .answer {
+        font-size: 14px;
+        padding-left: 46px;
+        padding-top: 12px;
+      }
+    }
+  }
+
+}
