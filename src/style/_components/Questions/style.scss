@@ -65,7 +65,8 @@
     color: inherit;
     max-height: 0;
     overflow: hidden;
-    transition: max-height .5s;
+    transition: max-height .7s;
+    transition-timing-function: linear;
     padding-right: 60px;
   }
 
@@ -80,6 +81,7 @@
 
     .answer {
       max-height: 500px;
+      transition-delay: .5s;
     }
   }
 }
@@ -89,6 +91,16 @@
 
     li {
       padding-bottom: 12px;
+
+      @for $i from 1 through 6 {
+        &:nth-of-type(#{$i}) {
+          .question {
+            &:before {
+              content: "0#{$i}.";
+            }
+          }
+        }
+      }
 
       .question {
         padding-left: 46px;
@@ -107,7 +119,7 @@
 
       .answer {
         font-size: 14px;
-        padding-left: 46px;
+        padding-left: 4px;
         padding-top: 12px;
       }
     }
