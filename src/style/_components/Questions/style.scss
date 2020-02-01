@@ -1,4 +1,4 @@
-.QAndA {
+.questions {
   font-family: 'Poppins', sans-serif;
 
   header {
@@ -17,14 +17,13 @@
     line-height: 1;
   }
 
-
   ul {
     list-style: none;
     color: #666;
   }
 
   li {
-    padding: 16px 80px 16px 0;
+    padding: 20px 0;
     box-shadow: -4px 10px 10px -9px #d6d6d6;
     position: relative;
     margin-bottom: 8px;
@@ -34,26 +33,29 @@
     }
   }
 
-  .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    border: 1px solid;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    opacity: .6;
-    color: inherit;
-    position: absolute;
-    top: calc(50% - 15px);
-    left: calc(100% - 50px);
-  }
-
   .question {
     color: inherit;
     font-size: 14px;
     font-weight: 500;
+    position: relative;
+    padding-right: 72px;
+
+    &:after {
+      content: "+";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      border: 1px solid;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      opacity: .6;
+      color: inherit;
+      position: absolute;
+      top: calc(50% - 15px);
+      left: calc(100% - 50px);
+    }
   }
 
   .answer {
@@ -63,12 +65,17 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height .5s;
+    padding-right: 60px;
   }
 
   li.open {
 
     .question {
       margin-bottom: 20px;
+
+      &:after {
+        content: "-";
+      }
     }
 
     .answer {
