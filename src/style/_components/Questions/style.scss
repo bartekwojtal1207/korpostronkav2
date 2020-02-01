@@ -23,7 +23,7 @@
   }
 
   li {
-    padding: 20px 0;
+    padding: 20px 0 20px  6px;
     box-shadow: -4px 10px 10px -9px #d6d6d6;
     position: relative;
     margin-bottom: 8px;
@@ -39,6 +39,7 @@
     font-weight: 500;
     position: relative;
     padding-right: 72px;
+    margin-bottom: 8px;
 
     &:after {
       content: "+";
@@ -71,7 +72,6 @@
   li.open {
 
     .question {
-      margin-bottom: 20px;
 
       &:after {
         content: "-";
