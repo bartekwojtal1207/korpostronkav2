@@ -65,9 +65,12 @@ class OurAdvantages extends Component {
         return (
             <section className={'our-advantages'}>
                 <div className={'container'}>
-                    <Slider {...sliderSettings}>
-                        {sliderItem}
-                    </Slider>
+                    {/*<Slider {...sliderSettings}>*/}
+                    {/*    {sliderItem}*/}
+                    {/*</Slider>*/}
+                    <div className={'our-advantages-list'}>
+                            {sliderItem}
+                    </div>
                 </div>
             </section>
         )
