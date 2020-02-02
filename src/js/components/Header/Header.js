@@ -15,8 +15,15 @@ const Header = (props) => {
         {/*    homepage end */}
 
         {/* career */}
+        {/*<div className={'container'}>*/}
+        {/*    <h1>Dlaczego warto <br/>do nas dołączyć ?</h1>*/}
+        {/*</div>*/}
+
+        {/* contact */}
         <div className={'container'}>
-            <h1>Dlaczego warto <br/>do nas dołączyć ?</h1>
+            <h1>Kontakt</h1>
+            <p>Masz jakiekolwiek pytania? Nie dowiedziałeś się wszystkiego?</p>
+            <ButtonLink>Skontaktuj się</ButtonLink>
         </div>
 
         </header>

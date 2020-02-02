@@ -64,10 +64,34 @@
       }
     }
   }
+
+
+  &-img.contact {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../../src/img/headers/flat1-min.jpg');
+    background-position: bottom;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: unset;
+
+    h1 {
+      margin-bottom: 50px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 32px;
+    }
+  }
 }
 
 .header.career {
   padding: 36px 0 66px 0;
+}
+
+.header.contact {
+  padding: 72px 0;
 }
 
 @media screen and('min-width: 540px') {
