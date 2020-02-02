@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ContactList from "../../components/Contact-list/Contact-list";
 import SectionTitle from "../../components/UI/Titles/SectionTitle";
+import ContactForm from "../../components/ContactForm/ContactForm";
 
 class Contact extends Component {
 
@@ -15,9 +16,7 @@ class Contact extends Component {
 
                     <ContactList/>
 
-                    <div className={'container'}>
-                        form
-                    </div>
+                    <ContactForm/>
                 </section>
             </div>
         )
