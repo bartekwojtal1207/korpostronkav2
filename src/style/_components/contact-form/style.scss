@@ -2,6 +2,7 @@
 
   &-section {
     padding-top: 52px;
+    padding-bottom: 52px;
     background-color: #4d9de8;
 
     .section-title {
@@ -25,7 +26,7 @@
     margin-bottom: 8px;
   }
 
-  input[type="text"], input[type="e-mail"], textarea {
+  input[type="text"], input[type="mail"], textarea {
     background-color: transparent;
     box-shadow: none;
     height: 44px;
@@ -57,5 +58,4 @@
     width: 190px;
     color: #4d9de8;
   }
-
 }

@@ -14,16 +14,18 @@ class ContactForm extends Component {
                     elementType: 'input',
                     elementConfig: {
                         type: 'text',
-                        autocomplete: 'off'
+                        autocomplete: 'off',
+                        required: 'true'
                     },
                     value: '',
-                    label: 'Imię i nazwisko'
+                    label: 'Imię i nazwisko',
                 },
                 email: {
                     elementType: 'input',
                     elementConfig: {
-                        type: 'e-mail',
-                        autocomplete: 'off'
+                        type: 'mail',
+                        autocomplete: 'off',
+                        required: 'true'
                     },
                     value: '',
                     label: 'E-mail'
@@ -32,7 +34,8 @@ class ContactForm extends Component {
                     elementType: 'textarea',
                     elementConfig: {
                         type: 'text',
-                        autocomplete: 'off'
+                        autocomplete: 'off',
+                        required: 'true'
                     },
                     value: '',
                     label: 'Treść'
