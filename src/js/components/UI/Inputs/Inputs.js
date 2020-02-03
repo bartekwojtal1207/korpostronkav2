@@ -17,7 +17,7 @@ const Input = (props) => {
 
 
     return (
-        <div>
+        <div className={'form-control'}>
             <label htmlFor="">{props.label}</label>
             {inputElement}
         </div>

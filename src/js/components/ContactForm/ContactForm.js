@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Input from "../UI/Inputs/Inputs";
+import SectionTitle from "../UI/Titles/SectionTitle";
+import ButtonLink from "../UI/Buttons/ButtonLink";
 
 class ContactForm extends Component {
 
@@ -14,7 +16,8 @@ class ContactForm extends Component {
                         type: 'text',
                         autocomplete: 'off'
                     },
-                    value: ''
+                    value: '',
+                    label: 'Imię i nazwisko'
                 },
                 email: {
                     elementType: 'input',
@@ -23,6 +26,7 @@ class ContactForm extends Component {
                         autocomplete: 'off'
                     },
                     value: '',
+                    label: 'E-mail'
                 },
                 message: {
                     elementType: 'textarea',
@@ -30,7 +34,8 @@ class ContactForm extends Component {
                         type: 'text',
                         autocomplete: 'off'
                     },
-                    value: ''
+                    value: '',
+                    label: 'Treść'
                 }
             }
         }
@@ -49,13 +54,16 @@ class ContactForm extends Component {
             <form id={'contact'} className={'contact-form'}>
                 {formElementsArray.map(formElement => ( <Input elementType={formElement.config.elementType}
                                elementConfig={formElement.config.elementConfig}
-                               value={formElement.config.value} />))}
+                               value={formElement.config.value}
+                               label={formElement.config.label}
+                />))}
+                <input type="submit" value={"wyślij"} className={'button-link'}/>
             </form>
         );
 
         return (
-            <div className={'container'}>
-                <h3 className={'contact-form-title'}>Masz pytania ?</h3>
+            <div className={'container contact-form-section'}>
+                <SectionTitle>Masz pytania ?</SectionTitle>
                 {form}
             </div>
         )
