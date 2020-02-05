@@ -65,9 +65,11 @@ class ContactForm extends Component {
         );
 
         return (
-            <div className={'container contact-form-section'}>
-                <SectionTitle>Masz pytania ?</SectionTitle>
-                {form}
+            <div className={'container container-contact'}>
+                <div className={'contact-form-section'}>
+                    <SectionTitle>Masz pytania ?</SectionTitle>
+                    {form}
+                </div>
             </div>
         )
     }
