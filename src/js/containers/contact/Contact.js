@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ContactList from "../../components/Contact-list/Contact-list";
 import SectionTitle from "../../components/UI/Titles/SectionTitle";
 import ContactForm from "../../components/ContactForm/ContactForm";
+import ContactMaps from "../../components/ContactMaps/ContactMaps";
 
 class Contact extends Component {
 
@@ -18,6 +19,7 @@ class Contact extends Component {
 
                     <ContactForm/>
                 </section>
+                <ContactMaps/>
             </div>
         )
     }

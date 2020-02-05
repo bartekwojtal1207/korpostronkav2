@@ -47,6 +47,7 @@
     "gulp-watch": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "react": "^16.12.0",
+    "react-bingmaps": "^3.6.1",
     "react-css-modules": "^4.7.11",
     "react-dom": "^16.12.0",
     "react-hot-loader": "^4.12.18",
