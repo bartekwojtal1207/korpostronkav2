@@ -19,6 +19,31 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
+    position: relative;
+
+    &:before {
+      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI0IDI0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0MxRTFGRjt9PC9zdHlsZT48ZyBpZD0ic3VyZmFjZTEiPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMiwzQzkuOCwzLDgsNC44LDgsN3MxLjgsNCw0LDRzNC0xLjgsNC00UzE0LjIsMywxMiwzeiBNMTIsMTNjLTYuMSwwLTgsNC04LDR2MmgxNnYtMkMyMCwxNywxOC4xLDEzLDEyLDEzeiBNMTQsMTZoM3YyaC0zVjE2eiIvPjwvZz48L3N2Zz4=);
+      left: 8px;
+      top: 36px;
+      position: absolute;
+      content: "";
+      display: block;
+      height: 23px;
+      width: 23px;
+    }
+
+    &:nth-of-type(2) {
+
+      &:before {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI0IDI0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0MxRTFGRjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjAsNEg0QzIuOSw0LDIsNC45LDIsNnYxMmMwLDEuMSwwLjksMiwyLDJoMTZjMS4xLDAsMi0wLjksMi0yVjZDMjIsNC45LDIxLjEsNCwyMCw0eiBNMjAsOGwtOCw1TDQsOFY2bDgsNWw4LTVWOHoiLz48L3N2Zz4=);
+      }
+    }
+
+    &:last-of-type {
+      &:before {
+        display: none;
+      }
+    }
   }
 
   label {
@@ -31,7 +56,7 @@
   input[type="text"], input[type="mail"], textarea {
     background-color: transparent;
     box-shadow: none;
-    height: 44px;
+    height: 40px;
     border: 1px solid #FFF;
     padding-left: 40px;
 
@@ -51,6 +76,7 @@
     height: 114px;
     padding-top: 6px;
     resize: none;
+    padding-left: 8px;
   }
 
   input[type="submit"] {
