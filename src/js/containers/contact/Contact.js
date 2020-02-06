@@ -3,6 +3,7 @@ import ContactList from "../../components/Contact-list/Contact-list";
 import SectionTitle from "../../components/UI/Titles/SectionTitle";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import ContactMaps from "../../components/ContactMaps/ContactMaps";
+import CompanyData from "../../components/CompanyData/CompanyData";
 
 class Contact extends Component {
 
@@ -14,11 +15,10 @@ class Contact extends Component {
                         <SectionTitle>Skontaktuj się z nami</SectionTitle>
                         <p className={'contact-description'}>Wypełnij formularz lub zadzwoń. Odpowiemy najszybciej jak to możliwe.</p>
                     </div>
-
                     <ContactList/>
-
                     <ContactForm/>
                 </section>
+                <CompanyData/>
                 <ContactMaps/>
             </div>
         )

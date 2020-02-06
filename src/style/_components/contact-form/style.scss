@@ -89,3 +89,18 @@
     color: #4d9de8;
   }
 }
+
+@media screen and ('min-width: 540px') {
+
+  .contact-form {
+
+    &-container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    &-section {
+      padding: 32px 80px;
+    }
+  }
+}
