@@ -15,8 +15,10 @@ class Contact extends Component {
                         <SectionTitle>Skontaktuj się z nami</SectionTitle>
                         <p className={'contact-description'}>Wypełnij formularz lub zadzwoń. Odpowiemy najszybciej jak to możliwe.</p>
                     </div>
-                    <ContactList/>
-                    <ContactForm/>
+                    <div className={'container no-mobile-padding'}>
+                        <ContactList/>
+                        <ContactForm/>
+                    </div>
                 </section>
                 <CompanyData/>
                 <ContactMaps/>

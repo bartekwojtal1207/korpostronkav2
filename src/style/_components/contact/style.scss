@@ -18,3 +18,31 @@
     margin-bottom: 42px;
   }
 }
+
+.no-mobile-padding {
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+
+@media screen and ('min-width: 540px') {
+
+  .no-mobile-padding {
+    padding-left: 16px!important;
+    padding-right: 16px!important;
+  }
+}
+
+@media screen and ('min-width: 1200px') {
+
+  .no-mobile-padding {
+    display: flex;
+
+    >div {
+      width: 50%;
+
+      &:first-of-type {
+        padding-left: 80px;
+      }
+    }
+  }
+}
