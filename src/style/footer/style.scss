@@ -14,7 +14,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     list-style: none;
-    padding-bottom: 22px;
+    margin-bottom: 22px;
 
     li {
       margin-right: 26px;
@@ -40,6 +40,31 @@ footer {
       height: 33px;
       background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI1MnB0IiBoZWlnaHQ9IjUycHQiIHZpZXdCb3g9IjAgMCA1MiA1MiIgdmVyc2lvbj0iMS4xIj4gICAgPGcgaWQ9InN1cmZhY2UxIj4gICAgICAgIDxwYXRoIHN0eWxlPSIgc3Ryb2tlOm5vbmU7ZmlsbC1ydWxlOm5vbnplcm87ZmlsbDojRkZGO2ZpbGwtb3BhY2l0eToxOyIgZD0iTSA0Mi4yNSAwIEwgOS43NSAwIEMgNC4zNjcxODggMCAwIDQuMzY3MTg4IDAgOS43NSBMIDAgNDIuMjUgQyAwIDQ3LjYzMjgxMyA0LjM2NzE4OCA1MiA5Ljc1IDUyIEwgNDIuMjUgNTIgQyA0Ny42MzI4MTMgNTIgNTIgNDcuNjMyODEzIDUyIDQyLjI1IEwgNTIgOS43NSBDIDUyIDQuMzY3MTg4IDQ3LjYzMjgxMyAwIDQyLjI1IDAgWiBNIDE2LjA3ODEyNSA0NC4xNDA2MjUgTCA4IDQ0LjE0MDYyNSBMIDcuOTUzMTI1IDE5Ljk1MzEyNSBMIDE2LjAzMTI1IDE5Ljk1MzEyNSBaIE0gMTEuODM1OTM4IDE2Ljc4OTA2MyBMIDExLjc4OTA2MyAxNi43ODkwNjMgQyA5LjE0ODQzOCAxNi43ODkwNjMgNy40NDUzMTMgMTQuOTY4NzUgNy40NDUzMTMgMTIuNzAzMTI1IEMgNy40NDUzMTMgMTAuMzgyODEzIDkuMjAzMTI1IDguNjI1IDExLjg5MDYyNSA4LjYyNSBDIDE0LjU3ODEyNSA4LjYyNSAxNi4yMjY1NjMgMTAuMzgyODEzIDE2LjI4MTI1IDEyLjcwMzEyNSBDIDE2LjI4MTI1IDE0Ljk2ODc1IDE0LjU3MDMxMyAxNi43ODkwNjMgMTEuODM1OTM4IDE2Ljc4OTA2MyBaIE0gNDQuMDg1OTM4IDQ0LjE0MDYyNSBMIDM1LjkzNzUgNDQuMTQwNjI1IEwgMzUuOTM3NSAzMSBDIDM1LjkzNzUgMjcuODIwMzEzIDM1LjA5Mzc1IDI1LjY1NjI1IDMyLjI1IDI1LjY1NjI1IEMgMzAuMDc4MTI1IDI1LjY1NjI1IDI4LjkwNjI1IDI3LjExNzE4OCAyOC4zNDM3NSAyOC41MzEyNSBDIDI4LjEzMjgxMyAyOS4wMzkwNjMgMjguMDc4MTI1IDI5LjczNDM3NSAyOC4wNzgxMjUgMzAuNDQ1MzEzIEwgMjguMDc4MTI1IDQ0LjE0MDYyNSBMIDE5Ljg5MDYyNSA0NC4xNDA2MjUgTCAxOS44NDM3NSAxOS45NTMxMjUgTCAyOC4wMzEyNSAxOS45NTMxMjUgTCAyOC4wNzgxMjUgMjMuMzY3MTg4IEMgMjkuMTI1IDIxLjc1IDMwLjg2NzE4OCAxOS40NjA5MzggMzUuMDM5MDYzIDE5LjQ2MDkzOCBDIDQwLjIxMDkzOCAxOS40NjA5MzggNDQuMDc4MTI1IDIyLjgzNTkzOCA0NC4wNzgxMjUgMzAuMDkzNzUgTCA0NC4wNzgxMjUgNDQuMTQwNjI1IFogIi8+ICAgIDwvZz48L3N2Zz4=);
       background-size: contain;
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-bottom: 50px;
+
+    li {
+      text-align: center;
+      margin-bottom: 12px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      text-transform: uppercase;
+      color: #FFF;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
     }
   }
 }
