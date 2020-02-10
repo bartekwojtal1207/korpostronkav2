@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Styles from './BurgerMenu.module.scss';
 import MenuList from "../MenuList/MenuList";
 
 const BurgerMenu = () => {
