@@ -67,4 +67,28 @@ footer {
       line-height: 20px;
     }
   }
+
+  .footer-address {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    margin-bottom: 26px;
+
+    li {
+      color: #FFF;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+
+  .copyright {
+
+    p {
+      text-align: center;
+      font-size: 11px;
+      color: #809fb9;
+      text-transform: uppercase;
+      line-height: 2.849;
+    }
+  }
 }
