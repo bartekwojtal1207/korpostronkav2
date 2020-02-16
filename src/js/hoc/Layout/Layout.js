@@ -7,7 +7,7 @@ class Layout extends Component {
 
     render(props) {
         return (
-         <div>
+         <>
              <div className={["header-img", this.props.headerClass].join(' ')}>
                  <Navbar/>
                  <Header headerClass={this.props.headerClass}/>
@@ -16,7 +16,7 @@ class Layout extends Component {
                  {this.props.children}
              </div>
              <Footer/>
-         </div>
+         </>
         );
     }
 }

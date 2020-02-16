@@ -55,12 +55,14 @@
     margin-bottom: 8px;
   }
 
-  input[type="text"], input[type="mail"], textarea {
+  input[type="text"], input[type="email"], textarea {
     background-color: transparent;
     box-shadow: none;
     height: 40px;
     border: 1px solid #FFF;
     padding-left: 40px;
+    color: #FFF;
+    font-size: 14px;
 
     &:focus {
       outline: none;
@@ -76,9 +78,8 @@
 
   textarea {
     height: 114px;
-    padding-top: 6px;
+    padding: 12px;
     resize: none;
-    padding-left: 8px;
   }
 
   input[type="submit"] {
@@ -104,6 +105,10 @@
 @media screen and ('min-width: 1200px') {
 
   .contact-form {
+
+    &-container {
+      padding-top: 50px;
+    }
 
     &-section {
 

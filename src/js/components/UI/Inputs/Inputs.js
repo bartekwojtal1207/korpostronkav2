@@ -6,13 +6,13 @@ const Input = (props) => {
 
     switch (props.elementType) {
         case 'input':
-            inputElement = <input {...props.elementConfig} value={props.value}/>;
+            inputElement = <input {...props.elementConfig} value={props.value} onChange={props.changed}/>;
             break;
         case 'textarea':
-            inputElement = <textarea value={props.value} {...props.elementConfig}/>;
+            inputElement = <textarea value={props.value} {...props.elementConfig} onChange={props.changed}/>;
             break;
         default:
-            inputElement = <input {...props.elementConfig} value={props.value}/>;
+            inputElement = <input {...props.elementConfig} value={props.value} onChange={props.changed}/>;
     }
 
 

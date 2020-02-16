@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Input from "../UI/Inputs/Inputs";
 import SectionTitle from "../UI/Titles/SectionTitle";
-import ButtonLink from "../UI/Buttons/ButtonLink";
 
 class ContactForm extends Component {
 
@@ -23,7 +22,7 @@ class ContactForm extends Component {
                 email: {
                     elementType: 'input',
                     elementConfig: {
-                        type: 'mail',
+                        type: 'email',
                         autocomplete: 'off',
                         required: 'true'
                     },
@@ -44,6 +43,18 @@ class ContactForm extends Component {
         }
     }
 
+    inputChangedHandler(event, inputId) {
+        const updatedContactForm = {
+            ...this.state.contactForm
+        };
+        const updatedFormElement = {
+            ...updatedContactForm[inputId]
+        };
+        updatedFormElement.value = event.target.value;
+        updatedContactForm[inputId] = updatedFormElement;
+        this.setState({contactForm: updatedContactForm});
+    }
+
     render() {
         const formElementsArray = [];
         for (let key in this.state.contactForm) {
@@ -59,6 +70,7 @@ class ContactForm extends Component {
                                elementConfig={formElement.config.elementConfig}
                                value={formElement.config.value}
                                label={formElement.config.label}
+                               changed={(event) => this.inputChangedHandler(event, formElement.id)}
                 />))}
                 <input type="submit" value={"wyślij"} className={'button-link'}/>
             </form>
