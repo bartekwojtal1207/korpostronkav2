@@ -112,5 +112,10 @@
         text-align: left;
       }
     }
+
+    input[type=submit] {
+      margin-right: 0;
+      font-weight: 700;
+    }
   }
 }
