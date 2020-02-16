@@ -1,0 +1,65 @@
+.form-success-message {
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #4d9ee9;
+
+  .green-point {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #37df82;
+    box-shadow: 1px 1px 7px 1px #47464675;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h6 {
+    font-size: 32px;
+    color: #fff;
+    line-height: 1.25;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  p {
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .line {
+    position: relative;
+    min-height: 200px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 280px;
+  }
+
+  img {
+    max-width: 100%;
+
+    &:first-of-type {
+      position: absolute;
+      left: -20px;
+    }
+  }
+
+  .send {
+    width: 25px;
+    transform: rotate(-35deg);
+    position: absolute;
+    right: 0;
+    //left: 403px;
+    top: -19px;
+  }
+}

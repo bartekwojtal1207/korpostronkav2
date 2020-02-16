@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Input from "../UI/Inputs/Inputs";
 import SectionTitle from "../UI/Titles/SectionTitle";
 const axios = require('axios').default;
+import ContactFormSuccessMessage from "./ContactFormSuccessMessage";
 
 class ContactForm extends Component {
 
@@ -101,6 +102,7 @@ class ContactForm extends Component {
                                changed={(event) => this.inputChangedHandler(event, formElement.id)}
                 />))}
                 <input type="submit" value={"wyślij"} className={'button-link'}/>
+
             </form>
         );
 
@@ -110,6 +112,7 @@ class ContactForm extends Component {
                     <SectionTitle>Masz pytania ?</SectionTitle>
                     {form}
                 </div>
+                <ContactFormSuccessMessage />
             </div>
         )
     }
