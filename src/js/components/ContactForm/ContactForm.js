@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Input from "../UI/Inputs/Inputs";
 import SectionTitle from "../UI/Titles/SectionTitle";
+const axios = require('axios').default;
 
 class ContactForm extends Component {
 
@@ -32,12 +33,18 @@ class ContactForm extends Component {
                 message: {
                     elementType: 'textarea',
                     elementConfig: {
-                        type: 'text',
                         autocomplete: 'off',
                         required: 'true'
                     },
                     value: '',
                     label: 'Treść'
+                },
+                _csrf_token: {
+                    elementType: 'input',
+                    elementConfig: {
+                        type: 'hidden',
+                        autocomplete: 'off'
+                    }
                 }
             }
         }
@@ -55,6 +62,24 @@ class ContactForm extends Component {
         this.setState({contactForm: updatedContactForm});
     }
 
+    formSubmit(event) {
+        event.preventDefault();
+        const formData = {};
+        for(let formElementId in this.state.contactForm) {
+            console.log(formElementId)
+            formData[formElementId] = this.state.contactForm[formElementId].value
+        }
+
+        const url = "https://firma.totalmoney.pl/kontakt/";
+        axios.post(url, formData)
+            .then(function (response) {
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    }
+
     render() {
         const formElementsArray = [];
         for (let key in this.state.contactForm) {
@@ -65,11 +90,14 @@ class ContactForm extends Component {
         }
 
         let form = (
-            <form id={'contact'} className={'contact-form'}>
-                {formElementsArray.map(formElement => ( <Input elementType={formElement.config.elementType}
+            <form id={'contact'} className={'contact-form'} onSubmit={(event => this.formSubmit(event))}>
+                <input type="hidden" name="_csrf_token" />
+                {formElementsArray.map(formElement => (
+                    <Input elementType={formElement.config.elementType}
                                elementConfig={formElement.config.elementConfig}
                                value={formElement.config.value}
                                label={formElement.config.label}
+                               name={formElement.id}
                                changed={(event) => this.inputChangedHandler(event, formElement.id)}
                 />))}
                 <input type="submit" value={"wyślij"} className={'button-link'}/>
