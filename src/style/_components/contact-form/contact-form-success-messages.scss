@@ -72,3 +72,10 @@
 .form-success-message.show {
   opacity: 1;
 }
+
+@media screen and(min-width: 1200px) {
+
+  .form-success-message {
+    top: 112px;
+  }
+}
