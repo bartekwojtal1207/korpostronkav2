@@ -2,9 +2,10 @@ import React from "react";
 import Logo from '../Logo/Logo';
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
-const Navbar = (props) => {
+const Navbar = React.forwardRef((props, ref) => {
+
     return (
-        <nav>
+        <nav ref={ref}>
             <div className='container'>
                 <Logo />
                 <BurgerMenu />
@@ -13,6 +14,6 @@ const Navbar = (props) => {
             </div>
         </nav>
     )
-};
+});
 
 export default Navbar;

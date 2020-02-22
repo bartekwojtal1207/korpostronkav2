@@ -8,13 +8,17 @@ class Layout extends Component {
     constructor(props) {
         super(props);
 
+        this.navRef = React.createRef();
+
         this.state = {
             navIsSticky: false
         }
     }
 
     componentDidMount() {
+        console.log(this.navRef.current)
         window.addEventListener('scroll', this.handleScroll);
+
     }
 
     componentWillUnmount () {
@@ -22,6 +26,8 @@ class Layout extends Component {
     }
 
     handleScroll (event) {
+        // console.log('scroll')
+        // console.log(this.childRef)
         // let scrollTop = event.srcElement.body.scrollTop;
         // console.log(scrollTop)
         //     itemTranslate = Math.min(0, scrollTop/3 - 60);
@@ -35,7 +41,7 @@ class Layout extends Component {
         return (
          <>
              <div className={["header-img", this.props.headerClass].join(' ')}>
-                 <Navbar/>
+                 <Navbar ref={this.navRef}/>
                  <Header headerClass={this.props.headerClass}/>
              </div>
              <div>
