@@ -1,9 +1,14 @@
 .form-success-message {
-  padding: 0 16px;
+  padding: 52px 0 0 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
   background-color: #4d9ee9;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity .5s;
 
   .green-point {
     width: 80px;
@@ -62,4 +67,8 @@
     //left: 403px;
     top: -19px;
   }
+}
+
+.form-success-message.show {
+  opacity: 1;
 }
