@@ -11,43 +11,38 @@ class Layout extends Component {
         this.navRef = React.createRef();
 
         this.state = {
-            navIsSticky: false
+            navIsSticky: false,
         }
     }
 
     componentDidMount() {
-        console.log(this.navRef.current)
-        window.addEventListener('scroll', this.handleScroll);
-
+        const navHeight = this.navRef.current.offsetHeight;
+        window.addEventListener('scroll', (event) => this.checkNavIsSticky(event, navHeight));
     }
 
     componentWillUnmount () {
-        window.removeEventListener('scroll', this.handleScroll);
+        window.removeEventListener('scroll', this.checkNavIsSticky);
     }
 
-    handleScroll (event) {
-        // console.log('scroll')
-        // console.log(this.childRef)
-        // let scrollTop = event.srcElement.body.scrollTop;
-        // console.log(scrollTop)
-        //     itemTranslate = Math.min(0, scrollTop/3 - 60);
-        //
-        // this.setState({
-        //     navIsSticky: true
-        // });
+    checkNavIsSticky (event, navHeight) {
+        let windowYPosition = window.pageYOffset;
+        let isSticky = windowYPosition > navHeight;
+        isSticky ? this.navRef.current.classList.add('sticky') : this.navRef.current.classList.remove('sticky');
+        this.setState({ navIsSticky: isSticky });
     }
 
     render(props) {
+
         return (
          <>
-             <div className={["header-img", this.props.headerClass].join(' ')}>
-                 <Navbar ref={this.navRef}/>
-                 <Header headerClass={this.props.headerClass}/>
+             <div className={ ["header-img", this.props.headerClass].join(' ') } >
+                 <Navbar ref={ this.navRef } />
+                 <Header headerClass={ this.props.headerClass } />
              </div>
              <div>
-                 {this.props.children}
+                 { this.props.children }
              </div>
-             <Footer/>
+             <Footer />
          </>
         );
     }
