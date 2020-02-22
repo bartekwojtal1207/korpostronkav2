@@ -22,6 +22,7 @@ nav {
     position: fixed;
     background-color: #FFF;
     width: 100%;
+    z-index: 10;
 
     .menu-list {
 
@@ -34,6 +35,10 @@ nav {
       a {
         color: #000;
       }
+    }
+
+    .logo {
+      color: #000;
     }
 
     + header {
