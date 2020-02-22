@@ -190,5 +190,13 @@
       font-size: 60px;
       line-height: 1.2;
     }
+
+    .button-link {
+      margin-right: 0;
+
+      &:first-of-type {
+        margin-right: 0;
+      }
+    }
   }
 }

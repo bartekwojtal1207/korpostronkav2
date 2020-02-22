@@ -23,7 +23,7 @@ const Header = (props) => {
         <div className={'container'}>
             <h1>Kontakt</h1>
             <p>Masz jakiekolwiek pytania? Nie dowiedziałeś się wszystkiego?</p>
-            <ButtonLink>Skontaktuj się</ButtonLink>
+            <ButtonLink link={"#contactSection"}>Skontaktuj się</ButtonLink>
         </div>
 
         </header>

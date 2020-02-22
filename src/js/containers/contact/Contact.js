@@ -4,7 +4,6 @@ import SectionTitle from "../../components/UI/Titles/SectionTitle";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import ContactMaps from "../../components/ContactMaps/ContactMaps";
 import CompanyData from "../../components/CompanyData/CompanyData";
-import img from "../../components/WhatWeDo/whatWeDo.jpg";
 
 class Contact extends Component {
     constructor() {
@@ -34,7 +33,7 @@ class Contact extends Component {
     render () {
         return (
             <div>
-                <section className={'contact-section'}>
+                <section className={'contact-section'} id={'contactSection'}>
                     <div className={'container'}>
                         <SectionTitle>Skontaktuj się z nami</SectionTitle>
                         {this.state.mobile === true &&
